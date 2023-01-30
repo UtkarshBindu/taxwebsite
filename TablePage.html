@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Information</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:ital@1&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Baloo Bhaina 2', cursive; -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:ital@1&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Noto Serif Ahom', serif; -->
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(191, 220, 218);
+        /* background: url(/img/try2.webp); */
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+
+
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 90px;
+        height: 67px;
+    }
+
+    .left h3 {
+        margin-top: -15px;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .mid {
+        display: block;
+        width: 64%;
+        margin: 20px auto;
+        border: 4px solid #ef1925;
+        border-radius: 50px;
+
+        /* background-color: #72e1d8; */
+    }
+
+    .navbar {
+        display: inline-block;
+        text-align: center;
+        margin-top: 16px;
+
+
+        padding-left: 119px;
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 0px 41px;
+        font-size: 21px;
+        color: rgb(251 205 32);
+        font-family: 'Baloo Bhaina 2', cursive;
+
+        font-weight: bolder;
+    }
+
+    #active {
+        text-decoration: underline ;
+
+        
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(249 164 29);
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+        /* border: 2px solid yellow; */
+    }
+
+    .btn {
+        border: 2px solid black;
+        background-color: #616161;
+        border-radius: 10px;
+        width: 143px;
+        height: 34px;
+        margin-bottom: 9px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #3a3a3a;
+    }
+
+    /* <-------start------> */
+
+    .wellcome {
+        /* border: 2px solid red; */
+        display: block;
+        margin: 32px auto;
+        width: 32%;
+        font-size: 31px;
+        font-family: 'Noto Serif Ahom', serif;
+        text-decoration: underline red 2px;
+
+
+        /* display: block;
+        width: 64%;
+        margin: 20px auto; */
+    }
+
+    .intro {
+        /* border: 2px solid yellow; */
+        display: block;
+        margin: 32px auto;
+        width: 58%;
+        font-size: 20px;
+        font-weight: bold;
+        /* text-decoration: underline red; */
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .chose {
+        /* border: 2px solid red; */
+        text-align: center;
+        font-size: 22px;
+        font-weight: bolder;
+        display: block;
+        margin: 32px auto;
+        width: 58%;
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+
+    .container {
+        display: inline;
+
+    }
+
+    .btn2 {
+        display: inline-block;
+        position: absolute;
+
+    }
+
+
+
+    .buttons {
+
+        display: inline;
+    }
+
+    .buttons a {
+        text-decoration: none;
+        margin: 32px auto;
+        width: 17%;
+        border: 3px solid orangered;
+        position: absolute;
+        left: 228px;
+        top: 393px;
+        padding: 6px 9px;
+        text-align: center;
+        color: darkred;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 30px;
+background-color: #d5fdfb;
+    }
+
+    .buttons2 a {
+        text-decoration: none;
+        margin: 32px auto;
+        width: 17%;
+        border: 3px solid orangered;
+        position: absolute;
+        right: 576px;
+        top: 393px;
+        padding: 6px 6px;
+        text-align: center;
+        color: darkred;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 30px;
+        background-color:#d5fdfb;
+
+    }
+
+    .buttons3 a {
+        text-decoration: none;
+        margin: 32px auto;
+        width: 17%;
+        border: 3px solid orangered;
+        position: absolute;
+        right: 240px;
+        top: 393px;
+        padding: 6px 6px;
+        text-align: center;
+        color: darkred;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 30px;
+background-color: #d5fdfb;
+    }
+    .buttons a:hover{
+        background-color: #a9ebe8;
+    }
+    .buttons2 a:hover{
+        background-color: #a9ebe8;
+    }
+    .buttons3 a:hover{
+        background-color: #a9ebe8;
+    }
+</style>
+
+<body>
+
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/img/download.jpg" alt="error loading img">
+            <h3>BINDU <br> PROJECTS</h3>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="/Home.html">Home</a> </li>
+                <li id="active"> <a href="#">Tables</a> </li>
+                <li> <a href="https://en.wikipedia.org/wiki/Income_tax">About Tax</a> </li>
+                <li> <a href="#">About Us</a> </li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button  class="btn"> <a href="https://www.instagram.com/utkarsh_bnd/" style="text-decoration: none; color: whitesmoke;" target="_blank"> Our Instagram</a></button> <br>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+
+    <h2 class="wellcome">Wellcome To The Tables Area</h2>
+
+    <p class="intro">
+        We Made Some Income Tax Tables Depending Upon The Age Of Person (Tax Payer)
+    </p>
+
+    <h4 class="chose">
+        Chose And Click On The Table In The Following
+    </h4>
+
+
+    <div class="container">
+        <div class="table1">
+            <!-- <p>table1</p> -->
+            <div class="mid2">
+                <ul class="buttons">
+                    <a href="table1.html" target="_blank">Individuals <br> (Up to the age Of 60 years)</a> </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="table2">
+            <!-- <p>table2</p> -->
+            <ul class="buttons2">
+                <a href="table2.html" target="_blank">Senior Citizens <br> (Age 60 to 80 Years)</a> </li>
+            </ul>
+        </div>
+
+        <div class="table3">
+            <!-- <p>table3</p> -->
+            <ul class="buttons3">
+                <a href="table3.html" target="_blank">Super Senior Citizens <br> (Age Above 80 Years)</a> </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
