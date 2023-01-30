@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Information</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:ital@1&display=swap"
+        rel="stylesheet">
+
+
+        
+
+    <!-- font-family: 'Baloo Bhaina 2', cursive; -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lato:ital@1&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+
+    <!-- font-family: 'Work Sans', sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Work Sans', sans-serif; -->
+
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(191, 220, 218);
+        /* background: url(/img/try2.webp); */
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+
+
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 90px;
+        height: 67px;
+    }
+
+    .left h3 {
+        margin-top: -15px;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+
+    }
+
+    .mid {
+        clear: both;
+        display: block;
+        width: 64%;
+        margin: 20px auto;
+        border: 4px solid #ef1925;
+        border-radius: 50px;
+
+        /* background-color: #72e1d8; */
+    }
+
+    .navbar {
+        overflow: auto;
+        clear: both;
+        display: inline-block;
+        text-align: center;
+        margin-top: 16px;
+
+
+        padding-left: 119px;
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 0px 41px;
+        font-size: 21px;
+        color: rgb(251 205 32);
+        font-family: 'Baloo Bhaina 2', cursive;
+
+        font-weight: bolder;
+    }
+
+    #active {
+        text-decoration: underline;
+        color: rgb(249 164 29);
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(249 164 29);
+
+    }
+
+    .right {
+        clear: both;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+
+        /* border: 2px solid yellow; */
+    }
+
+    .btn {
+        border: 2px solid black;
+        background-color: #616161;
+        border-radius: 10px;
+        width: 143px;
+        height: 34px;
+        margin-bottom: 9px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #3a3a3a;
+    }
+
+    /* <---------STRAT------> */
+
+    .container1 h2 {
+        font-family: 'Work Sans', sans-serif;
+        display: inline-block;
+        width: 110%;
+        margin-left: 23px;
+        margin-bottom: 0px;
+        margin-top: 102px;
+        position: relative;
+    }
+
+    .container1 {
+
+        display: inline-block;
+    }
+
+    .para1 {
+        margin-right: 645px;
+        text-align: justify;
+        margin-top: 12px;
+        margin-left: 6px;
+        font-size: 21px;
+        position: relative;
+        display: block;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .para1 p {
+        float: left;
+        margin-top: 2px;
+    }
+
+    .typeoftax {
+        float: right;
+    }
+
+    .table {
+        border: 3px solid blue;
+        border-radius: 10px;
+
+        margin-right: 17px;
+        margin-left: 721px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #549590;
+    }
+
+    .bgsh {
+        background-color: aquamarine;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid black;
+    }
+    .bghd{
+        background-color: #1cf7ae;
+        /* font-size: 2px; */
+        font-weight: bolder;
+        border: 2px solid black;
+    }
+</style>
+
+<body> 
+
+    <header class="header">
+
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="/img/download.jpg" alt="error loading img">
+            <h3>BINDU <br> PROJECTS</h3>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li id="active"> <a href="#">Home</a> </li>
+                <li> <a href="/TablePage.html">Tables</a> </li>
+                <li> <a href="https://en.wikipedia.org/wiki/Income_tax" target="_blank">About Tax</a> </li>
+                <li> <a href="#">About Us</a> </li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button  class="btn"> <a href="https://www.instagram.com/utkarsh_bnd/" style="text-decoration: none; color: whitesmoke;" target="_blank"> Our Instagram</a></button> <br>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container1">
+
+
+        <h2 class="Tax1">
+            Income Tax
+        </h2>
+        <div class="para1">
+            <p>
+                An income tax is a tax imposed on individuals or entities (taxpayers) in respect of the income or
+                profits earned by them (commonly called taxable income). Income tax generally is computed as the product
+                of a tax rate times the taxable income. Taxation rates may vary by type or characteristics of the
+                taxpayer and the type of income
+            </p>
+            <p>
+                The tax rate may increase as taxable income increases (referred to as graduated or progressive tax
+                rates). The tax imposed on companies is usually known as corporate tax and is commonly levied at a flat
+                rate. Individual income is often taxed at progressive rates where the tax rate applied to each
+                additional unit of income increases (e.g., the first $10,000 of income taxed at 0%, the next $10,000
+                taxed at 1%, etc.). Most jurisdictions exempt local charitable organizations from tax. Income from
+                investments may be taxed at different (generally lower) rates than other types of income. Credits of
+                various sorts may be allowed that reduce tax. Some jurisdictions impose the higher of an income tax or a
+                tax on an alternative base or measure of income.
+            </p>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="bghd">Direct Tax</th>
+                        <th class="bghd">Indirect Tax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bgsh">
+                            <ul>
+                                <li>Taxes which are paid directly by <br> the
+                                    taxpayer are called direct taxes.</li>
+                            </ul>
+                        </td>
+
+                        <td class="bgsh">
+                            <ul>
+                                <li>Taxes which are not paid directly by the <br>
+                                    taxpayer are called indirect taxes</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bgsh">
+                            <ul>
+                                <li>Examples : Income tax, wealth tax,<br>
+                                    professional tax, etc.</li>
+                            </ul>
+                        </td>
+                        <td class="bgsh">
+                            <ul>
+                                <li>Examples : Central sales tax, value added <br>
+                                    tax, service tax, excise duty, customs duty, <br>
+                                    etc.</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
